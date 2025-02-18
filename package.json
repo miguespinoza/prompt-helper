@@ -1,12 +1,17 @@
 {
-  "name": "my-extension",
-  "displayName": "My Extension",
+  "name": "prompt-helper",
+  "displayName": "Prompt Helper",
   "description": "Appends code and file path to a prompt text and displays it in a Markdown file with sections.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:myExtension.sendToPrompt",
+    "onCommand:myExtension.loadMarkdownFile",
+    "onCommand:myExtension.clearPrompt"
+  ],
   "contributes": {
     "commands": [
       {
